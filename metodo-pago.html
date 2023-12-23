@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de pago - Rincón De Cuba</title>
+    <!-- Incluye el CSS de Bootstrap desde el CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Incluye el CSS de Bootstrap Icons desde el CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./metodopago.CSS">
+    <!-- Incluye el CSS personalizado -->
+    
+</head>
+
+<body>
+    <!-- Crea una navbar con el logo, el nombre y los enlaces de la página -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Usa una imagen como logo de la página -->
+            <a class="navbar-brand" href="./Index.html">
+                <img src="./img/Rincon-de-Cuba-Pequeño.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Rincón De Cuba
+            </a>
+            <!-- Añade un botón para mostrar u ocultar los enlaces en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Agrupa los enlaces en un contenedor que se puede colapsar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Alinea los enlaces a la derecha -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Crea los enlaces de la página -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienes-somos.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./metodo-pago.html">Método de pago</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center my-4">Método de pago</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Crea una alerta con el título y el resumen del contenido -->
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Servicio de Pago y Entrega</h4>
+                    <p>En Rincón De Cuba, sabemos que la comodidad y la seguridad son esenciales cuando realizas tus
+                        compras en línea. Por eso, hemos diseñado un servicio de pago y entrega que se adapta a tus
+                        necesidades. Nuestro principal objetivo es brindarte una experiencia de compra sin
+                        preocupaciones y completamente satisfactoria. Aquí te explicamos cómo funciona nuestro sistema
+                        de pago y entrega.</p>
+                </div>
+                <!-- Crea unas pestañas con los detalles de cada sección -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="experiencia-tab" data-bs-toggle="tab"
+                            data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia"
+                            aria-selected="true">Experiencia y trayectoria</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="metodos-tab" data-bs-toggle="tab" data-bs-target="#metodos"
+                            type="button" role="tab" aria-controls="metodos" aria-selected="false">Métodos de
+                            pago</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contraentrega-tab" data-bs-toggle="tab"
+                            data-bs-target="#contraentrega" type="button" role="tab" aria-controls="contraentrega"
+                            aria-selected="false">Pago al Momento de la Entrega</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="clientes-tab" data-bs-toggle="tab" data-bs-target="#clientes"
+                            type="button" role="tab" aria-controls="clientes" aria-selected="false">Clientes
+                            Habituales</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="notificaciones-tab" data-bs-toggle="tab"
+                            data-bs-target="#notificaciones" type="button" role="tab" aria-controls="notificaciones"
+                            aria-selected="false">Notificaciones por Correo y WhatsApp</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="garantia-tab" data-bs-toggle="tab" data-bs-target="#garantia"
+                            type="button" role="tab" aria-controls="garantia" aria-selected="false">Nuestra
+                            Garantía</button>
+                    </li>
+                </ul>
+                <!-- Crea un contenedor para el contenido de cada pestaña -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="experiencia" role="tabpanel"
+                        aria-labelledby="experiencia-tab">
+                        <p>Nuestra historia se remonta a años atrás, cuando comenzamos nuestro viaje en el mundo de la
+                            venta de productos mediante los medios digitales online. Esta larga trayectoria nos ha
+                            permitido desarrollar un conocimiento profundo de la industria, así como establecer
+                            relaciones sólidas con proveedores confiables de primer nivel. Esto significa que puedes
+                            confiar en que cada producto que ofrecemos ha sido cuidadosamente seleccionado y evaluado
+                            para cumplir con los más altos estándares de calidad.</p>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 16.6%;" aria-valuenow="16.6"
+                                aria-valuemin="0" aria-valuemax="100">16.6%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="metodos" role="tabpanel" aria-labelledby="metodos-tab">
+                        <p>Ofrecemos una variedad de opciones de pago, incluyendo Zelle, CashApp y PayPal, para que
+                            puedas elegir la que te resulte más conveniente. Tu comodidad es nuestra prioridad.</p>
+                        <!-- Añade unos iconos para representar los métodos de pago -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="bi bi-cash"></i> Zelle</li>
+                            <li class="list-inline-item"><i class="bi bi-credit-card"></i> CashApp</li>
+                            <li class="list-inline-item"><i class="bi bi-wallet"></i> PayPal</li>
+                        </ul>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 33.3%;" aria-valuenow="33.3"
+                                aria-valuemin="0" aria-valuemax="100">33.3%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contraentrega" role="tabpanel" aria-labelledby="contraentrega-tab">
+                        <p>Para ofrecerte la máxima flexibilidad, te brindamos la opción de pagar tus pedidos en el
+                            mismo momento en que recibes tus productos. Esto significa que puedes revisar tu compra y
+                            asegurarte de que todo esté en perfecto estado antes de realizar el pago. Nuestros amables
+                            mensajeros estarán encantados de esperar mientras lo haces. Aceptamos pagos en efectivo y
+                            con tarjeta de crédito o débito para tu conveniencia.</p>
+                        <!-- Añade una alerta para resaltar la ventaja de este método -->
+                        <div class="alert alert-success" role="alert">
+                            <i class="bi bi-check-circle"></i> Este método te permite ahorrar tiempo y evitar
+                            comisiones.
+                        </div>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="clientes" role="tabpanel" aria-labelledby="clientes-tab">
+                        <p>Para nuestros clientes habituales, hemos simplificado aún más el proceso de compra. Si ya has
+                            realizado compras con nosotros y tienes una cuenta en Nuestra tienda, puedes optar por
+                            realizar el pago en línea al momento de hacer tu pedido. Esto agiliza el proceso y te
+                            permite recibir tus productos más rápido.</p>
+                        <!-- Añade un botón para iniciar sesión o registrarse -->
+                        <div class="d-grid gap-2">
+                            
+                            <button type="button" class="btn btn-secondary">Registrarse</button>
+                        </div>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 66.6%;" aria-valuenow="66.6"
+                                aria-valuemin="0" aria-valuemax="100">66.6%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="notificaciones" role="tabpanel" aria-labelledby="notificaciones-tab">
+                        <p>Una vez que hayas realizado tu pedido y seleccionado tu método de pago preferido, te
+                            mantendremos informado sobre el estado de tu entrega. Después de procesar tu pedido,
+                            recibirás una notificación por correo electrónico o WhatsApp, según tu preferencia. Esta
+                            notificación incluirá detalles sobre la fecha y hora estimada de entrega, así como un enlace
+                            de seguimiento para que puedas rastrear tu pedido en tiempo real. En Rincón De Cuba,
+                            valoramos tu tiempo y queremos que estés al tanto de la ubicación de tu paquete en todo
+                            momento.</p>
+                        <!-- Añade unos iconos para representar los medios de notificación -->
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="bi bi-envelope"></i> Correo electrónico</li>
+                            <li class="list-inline-item"><i class="bi bi-whatsapp"></i> WhatsApp</li>
+                        </ul>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 83.3%;" aria-valuenow="83.3"
+                                aria-valuemin="0" aria-valuemax="100">83.3%</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="garantia" role="tabpanel" aria-labelledby="garantia-tab">
+                        <p>En Rincón De Cuba, nos enorgullece ofrecer un servicio de pago y entrega que se adapta a tus
+                            necesidades. Nos esforzamos por garantizar la satisfacción de nuestros clientes en cada paso
+                            del proceso. Si tienes alguna pregunta o necesitas asistencia, nuestro equipo de atención al
+                            cliente está siempre dispuesto a ayudarte.</p>
+                        <p>Confía en nosotros para que tus compras en línea sean fáciles y seguras. ¡Haz tu pedido hoy y
+                            descubre la comodidad de comprar en Rincón De Cuba!</p>
+                        <!-- Añade una alerta para resaltar la garantía -->
+                        <div class="alert alert-warning" role="alert">
+                            <i class="bi bi-shield-check"></i> Todos nuestros productos cuentan con una garantía de 30
+                            días.
+                        </div>
+                        <!-- Añade una barra de progreso para indicar el avance -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Incluye el JS de Bootstrap desde el CDN -->
+    <!-- Si no vas a usar los componentes que requieren JavaScript, puedes omitir este script -->
+    <!-- También puedes incluir Popper y el JS de Bootstrap por separado si lo prefieres -->
+    <!-- Puedes consultar la documentación de Bootstrap para más detalles -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

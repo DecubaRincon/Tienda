@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de html 5 con Bootstrap</title>
+  <!-- CSS de intl-tel-input -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+  <!-- CSS de flags-icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+
+  <!-- Links para vincular Bootstrap v5.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #121314;
+}
+
+body > ul {
+  position: absolute;
+  top: 50%;
+  width: 800px;
+  height: 200px;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -130px;
+}
+
+ul > li {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 65px;
+  opacity: 0;
+  padding-top: 40px;
+  text-align: center;
+  transition: 1s opacity;
+}
+
+.active {
+  opacity: 1;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #646566;
+  line-height: 1.5em;
+}
+
+strong {
+  color: #f80000;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
+}
+#c {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px; /* Espacio entre elementos */
+      padding: 0;
+    }
+
+    #c li {
+      width: 200px; /* Ajusta el ancho según tu diseño */
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Estilos para la imagen dentro de cada li */
+    #c li img {
+      width: 100%;
+      border-radius: 10px; /* Redondear los bordes de la imagen */
+    }
+
+    /* Estilos para los encabezados h2 y h3 dentro de cada li */
+    #c li h2 {
+      color: #ffffff; /* Cambiar color a rojo */
+      margin-bottom: 10px; /* Agregar espacio inferior */
+    }
+
+    #c li h3 {
+      color: #df2222; /* Cambiar color a blanco */
+    }
+    
+    
+    .navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    transition: background-color 0.4s ease; /* Transición suave */
+  }
+
+  .navbar-nav {
+    margin-right: auto; /* Mueve los elementos a la derecha */
+  }
+
+  /* Estilos para los íconos del carrito */
+  .cart-icon-badge {
+    position: relative;
+  }
+
+  .cart-icon-badge .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 0.75rem;
+  }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./Inicio.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <ul id="c">
+
+    <li>
+      <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" alt="Pollo" class="card-img-top">
+    <h2>Pernil de Cerdo</h2>
+    <h3>$2.50us por libra</h3>
+      <p>bienen con un aproximado de 20 Libras</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+    <li>
+      <img src="https://i.postimg.cc/ZRHWtppk/Aceite-de-1-L.jpg" alt="Pollo" class="card-img-top">
+    <h2>Aceite</h2>
+    <h3>$5.00us</h3>
+      <p>Contiene una capasidad de 1 Litro</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+    <li>
+      <img src="https://i.postimg.cc/MKq8fNCY/salchicas.jpg" alt="Pollo" class="card-img-top">
+    <h2>salchicas</h2>
+    <h3>$5.00us</h3>
+      <p>Paquete de 10 unidades</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+    <li>
+      <img src="https://i.postimg.cc/G3kC2d52/Refresco-6-unidades.jpg" alt="Pollo" class="card-img-top">
+    <h2>Refresco gaseado</h2>
+    <h3>$5.00us</h3>
+      <p>Pomo de 1.5 Litros</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+    <li>
+      <img src="https://i.postimg.cc/Ghj9Dtmb/Queso1.jpg" alt="Pollo" class="card-img-top">
+    <h2>Queso criollo</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/wvwjbHYg/CAlton-de-huevos.jpg" alt="Pollo" class="card-img-top">
+    <h2>Carton de Huevos</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/R0M9r8RF/Frijoles.jpg" alt="Pollo" class="card-img-top">
+    <h2>Frijoles</h2>
+    <h3>$5.00us</h3>
+      <p>Colorados, Negros y blancos</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/bJc5c28R/Zason-Goya-paqetico.jpg" alt="Pollo" class="card-img-top">
+    <h2>Sazon Goya</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+    <li>
+      <img src="https://i.postimg.cc/ZKVXBRFT/Wiskey.jpg" alt="Pollo" class="card-img-top">
+    <h2>Wiskey</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/xT0W1Hmx/up-7-de-limon.jpg" alt="Pollo" class="card-img-top">
+    <h2>Refresco de limon</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/4N9XppyJ/Croquetas-de-Chorizao.jpg" alt="Pollo" class="card-img-top">
+    <h2>Croquetas de chorizo</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+      <li>
+      <img src="https://i.postimg.cc/qRJ7LqY1/Cafe-la-llave.jpg alt="Pollo" class="card-img-top">
+    <h2>Cafe La Llave</h2>
+    <h3>$5.00us</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <button type="button" class="btn btn-light">Light</button>
+    </li>
+
+  </ul>
+
+  <script>
+    var timer = 4000;
+
+var i = 0;
+var max = $('#c > li').length;
+ 
+	$("#c > li").eq(i).addClass('active').css('left','0');
+	$("#c > li").eq(i + 1).addClass('active').css('left','25%');
+	$("#c > li").eq(i + 2).addClass('active').css('left','50%');
+	$("#c > li").eq(i + 3).addClass('active').css('left','75%');
+ 
+
+	setInterval(function(){ 
+
+		$("#c > li").removeClass('active');
+
+		$("#c > li").eq(i).css('transition-delay','0.25s');
+		$("#c > li").eq(i + 1).css('transition-delay','0.5s');
+		$("#c > li").eq(i + 2).css('transition-delay','0.75s');
+		$("#c > li").eq(i + 3).css('transition-delay','1s');
+
+		if (i < max-4) {
+			i = i+4; 
+		}
+
+		else { 
+			i = 0; 
+		}  
+
+		$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+		$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+		$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+		$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+	
+	}, timer);
+ 
+  </script>
+</body>
+
+</html>

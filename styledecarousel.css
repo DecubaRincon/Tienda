@@ -1,0 +1,28 @@
+ /* Estilos para el carrusel */
+    /* Agrega tus estilos personalizados aquí si es necesario */
+    .carousel-item {
+        width: 25%;
+        float: left;
+        list-style-type: none;
+        position: relative;
+        opacity: 0;
+        transition: 1s opacity;
+      }
+  
+      .active {
+        opacity: 1;
+      }
+  
+      p {
+        font-family: sans-serif;
+        font-size: 13px;
+        color: #646566;
+        line-height: 1.5em;
+      }
+  
+      strong {
+        color: #fff;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 100px;
+      }

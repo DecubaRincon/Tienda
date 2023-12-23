@@ -1,0 +1,130 @@
+:root {
+    --color-primary: #e9ecef;
+    --color-secondary: #343a40;
+    --color-accent: #17a2b8;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--color-accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: var(--color-secondary);
+  }
+  
+  button {
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  
+  
+  .card {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+    animation: rotate 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+  .navbar a:not(.navbar-brand):hover {
+    /* Aquí va el código del efecto hover */
+    display: none;
+  }
+  
+  
+  
+  /* Selecciona el contenido de la pestaña Clientes habituales */
+  #clientes {
+    /* Cambia el color de fondo a un tono verde claro */
+    background-color: #e0f2f1;
+    /* Cambia el color del texto a un tono verde oscuro */
+    color: #00695c;
+    /* Añade un borde redondeado de color verde */
+    border: 2px solid #009688;
+    border-radius: 8px;
+    /* Añade una sombra interior para crear un efecto de relieve */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Añade un margen y un relleno para separar el contenido */
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  /* Selecciona el botón de la pestaña Clientes habituales */
+  #clientes-tab {
+    /* Cambia el color de fondo a un tono verde */
+    background-color: #009688;
+    /* Cambia el color del texto a blanco */
+    color: #ffffff;
+  }
+  
+  /* Selecciona el botón de la pestaña Clientes habituales cuando está activo */
+  #clientes-tab.active {
+    /* Cambia el color de fondo a un tono verde más claro */
+    background-color: #4db6ac;
+    /* Cambia el color del texto a un tono verde oscuro */
+    color: #00695c;
+  }
+  
+  /* Selecciona los botones de iniciar sesión y registrarse */
+  #clientes .btn {
+    /* Cambia el color de fondo a un tono verde */
+    background-color: #009688;
+    /* Cambia el color del texto a blanco */
+    color: #ffffff;
+    /* Añade una sombra exterior para crear un efecto de profundidad */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Selecciona los botones de iniciar sesión y registrarse cuando se pasa el cursor */
+  #clientes .btn:hover {
+    /* Cambia el color de fondo a un tono verde más claro */
+    background-color: #4db6ac;
+    /* Cambia el color del texto a un tono verde oscuro */
+    color: #00695c;
+    /* Aumenta la sombra exterior para crear un efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Selecciona la barra de progreso */
+  #clientes .progress-bar {
+    /* Cambia el color de la barra a un tono verde */
+    background-color: #009688;
+  }
+  

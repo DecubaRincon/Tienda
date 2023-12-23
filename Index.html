@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de html 5 con Bootstrap</title>
+  <!-- CSS de intl-tel-input -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+
+<!-- CSS de flags-icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+
+
+  <!-- Links para vincular Bootstrap v5.3 -->  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+  
+  </style>
+</head>
+<body>
+   <!-- Navbar con un Carrito -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-navbar transparent-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./Index.html">Mi Tienda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./metodo-pago.html">Metodo de Pago</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./quienes-somos.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://rincondecuba.systeme.io/registro">Suscribirse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="contactoLink">Agregados a mi cesta</a>
+        </li>
+             
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="cart-icon-badge bg-danger">
+              <i class="bi bi-cart-fill text-white"></i>
+              <span class="badge badge-pill bg-secondary">0</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide my-lg-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex justify-content-center align-items-center">
+        <img src="./img/Banner/banner-Rincon-de-cuba-1.jpg" class="d-block w-100" alt="..." style="object-fit: cover; object-position: bottom;">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Banner/BANNER-2.jpg" class="d-block w-100" alt="..." style="object-fit: cover; object-position: bottom;">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Banner/BANNER-3.jpg" class="d-block w-100" alt="..." style="object-fit: cover; object-position: bottom;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!----------------------------------- intro de la pagina -->
+
+<section class="w-75 mx-auto text-center pt-3 my-lg-4" id="Intro">
+    <h1 class="p-3 fs-2 border-top border-3">Elabora con nosotros tus Combos de alimentos para <span class="text-primary"> tus familiares en Cuba.</span></h1>
+    <p>Bienvenido a Rincón de Cuba,<span class="text-primary"> tu destino para los mejores productos y combos de comida elaborados por usted para sus familiares en Cuba. Ofrecemos una selección exclusiva de productos y combos diseñados para satisfacer tus antojos y brindarte una auténtica experiencia. Explora nuestros productos y crea tus combos de comida a tu preferencia para tus familiares en Cuba.</span></p>
+</section>
+<h1></h1>
+  <p class="text-center" id="visit-count">¡Bienvenido a nuestra página! Esta es tu primera visita.</p>
+
+
+
+
+
+  <!----------------------------------- Sesión de productos -->
+
+<section class="container  text-center">
+
+
+  <div class="row justify-content-center">
+    <!-- primer producto -->
+    <div class="col-lg-3 col-12 mb-3">
+      <div class="card h-100 border-0">
+        <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pernil de Cerdo</h5>
+          <p class="card-text product-price fw-bold text-danger">$2.50us por Libra</p>
+          
+        </div>
+        <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+          <!-- Botón que activa el modal -->
+          <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#modaluno"><i class="bi bi-eye"></i> Ver ahora</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Modal producto -->
+    <div class="modal fade" id="modaluno" tabindex="-1" aria-labelledby="modalunoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <!-- Imagen del producto en el modal -->
+            <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="img-fluid w-100" alt="...">
+            <!-- Información del producto en el modal -->
+            <div class="p-4 bg-light">
+              <h4 class="modal-title" id="exampleModalLabel">Pernil de Cerdo</h4>
+              <p class="product-price fw-bold text-danger">$2.50us por libra</p>
+              <p class="">Los murlos vienen con un promedio de 20 Libras</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+                                        <!-- 2 producto -->
+
+    <div class="col-lg-3 col-12 mb-3">
+      <div class="card h-100 border-0">
+        <img src="https://i.postimg.cc/Vv2X5Hvm/603ebddacf623246118940.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Carne Limpia de Cerdo</h5>
+          <p class="card-text product-price fw-bold text-danger">$15.00us(Cinco Libras)</p>
+          
+        </div>
+        <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+          <!-- Botón que activa el modal -->
+          <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#carnelimpiamodal"><i class="bi bi-eye"></i> Ver ahora</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Modal producto -->
+    <div class="modal fade" id="carnelimpiamodal" tabindex="-1" aria-labelledby="carnelimpiamodalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <!-- Imagen del producto en el modal -->
+            <img src="https://i.postimg.cc/Vv2X5Hvm/603ebddacf623246118940.jpg" class="img-fluid w-100" alt="...">
+            <!-- Información del producto en el modal -->
+            <div class="p-4 bg-light">
+              <h4 class="modal-title" id="carnelimpiamodal">Carne Limpia de Cerdo</h4>
+              <p class="product-price fw-bold text-danger">$15.00us(5 Libras)</p>
+              <p class="">La compra minima es una Bolsa de 5 Libras</p>
+              <p class="">Para combras mayores a 20 Libras hay un descuento del 10%</p>
+              <p class="product-price fw-bold text-danger">$54.00us(20 Libras)</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 producto -->
+    <div class="col-lg-3 col-12 mb-3">
+      <div class="card h-100 border-0">
+        <img src="https://i.postimg.cc/ZRHWtppk/Aceite-de-1-L.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aceite</h5>
+          <p class="card-text product-price fw-bold text-danger">$3.50us</p>
+          
+        </div>
+        <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+          <!-- Botón que activa el modal -->
+          <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#aceitemodal"><i class="bi bi-eye"></i> Ver ahora</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Modal producto -->
+    <div class="modal fade" id="aceitemodal" tabindex="-1" aria-labelledby="aceitemodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <!-- Imagen del producto en el modal -->
+            <img src="https://i.postimg.cc/ZRHWtppk/Aceite-de-1-L.jpg" class="img-fluid w-100" alt="...">
+            <!-- Información del producto en el modal -->
+            <div class="p-4 bg-light">
+              <h4 class="modal-title" id="aceitemodal">Aceite</h4>
+              <p class="product-price fw-bold text-danger">$3.50us</p>
+              <p class="">Pomos de 1 Litro</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 Producto -->
+    <div class="col-lg-3 col-12 mb-3">
+      <div class="card h-100 border-0">
+        <img src="https://i.postimg.cc/VLWm7mqT/Pomo-Un-litro-Cola.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Refresco de Cola</h5>
+          <p class="card-text product-price fw-bold text-danger">$2.50us</p>
+          
+        </div>
+        <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+          <!-- Botón que activa el modal -->
+          <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#refrescomodal"><i class="bi bi-eye"></i> Ver ahora</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Modal producto -->
+    <div class="modal fade" id="refrescomodal" tabindex="-1" aria-labelledby="refrescomodal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <!-- Imagen del producto en el modal -->
+            <img src="https://i.postimg.cc/G3kC2d52/Refresco-6-unidades.jpg" class="img-fluid w-100" alt="...">
+            <!-- Información del producto en el modal -->
+            <div class="p-4 bg-light">
+              <h4 class="modal-title" id="refrescomodal">Refresco Gaseado</h4>
+              <p class="product-price fw-bold text-danger">$2.50us por cada unidad</p>
+              <p class="">Para copras de 6 unidades hay un descuento del 10%</p>
+              <p class="product-price fw-bold text-danger">$13.50us</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 5 producto -->
+    <div class="col-lg-3 col-12 mb-3">
+      <div class="card h-100 border-0">
+        <img src="https://i.postimg.cc/1zn2N3pD/7461063094796-kymxyqzr1lcqmzwb.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Refresco de Cola </h5>
+          <p class="card-text product-price fw-bold text-danger">$1.00us</p>
+          
+        </div>
+        <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+          <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+          <!-- Botón que activa el modal -->
+          <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#resco400modal"><i class="bi bi-eye"></i> Ver ahora</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Modal producto -->
+    <div class="modal fade" id="resco400modal" tabindex="-1" aria-labelledby="resco400modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <!-- Imagen del producto en el modal -->
+            <img src="https://i.postimg.cc/1zn2N3pD/7461063094796-kymxyqzr1lcqmzwb.webp" class="img-fluid w-100" alt="...">
+            <!-- Información del producto en el modal -->
+            <div class="p-4 bg-light">
+              <h4 class="modal-title" id="resco400modalLabel">Refrsco de Cola</h4>
+              <p class="product-price fw-bold text-danger">$1.00us</p>
+              <p class="">Son Pomos de 400ml</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 6 producto -->
+<div class="col-lg-3 col-12 mb-3">
+  <div class="card h-100 border-0">
+    <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pernil de Cerdo</h5>
+      <p class="card-text product-price fw-bold text-danger">$2.50us por Libra</p>
+      
+    </div>
+    <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+      <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+      <!-- Botón que activa el modal -->
+      <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#modaluno"><i class="bi bi-eye"></i> Ver ahora</button>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Modal producto -->
+<div class="modal fade" id="modaluno" tabindex="-1" aria-labelledby="modalunoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <!-- Imagen del producto en el modal -->
+        <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="img-fluid w-100" alt="...">
+        <!-- Información del producto en el modal -->
+        <div class="p-4 bg-light">
+          <h4 class="modal-title" id="exampleModalLabel">Pernil de Cerdo</h4>
+          <p class="product-price fw-bold text-danger">$2.50us por libra</p>
+          <p class="">Los murlos vienen con un promedio de 20 Libras</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 6 producto -->
+<div class="col-lg-3 col-12 mb-3">
+  <div class="card h-100 border-0">
+    <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pernil de Cerdo</h5>
+      <p class="card-text product-price fw-bold text-danger">$2.50us por Libra</p>
+      
+    </div>
+    <div class="card-footer border-0 bg-transparent d-flex justify-content-between align-items-center">
+      <button class="btn btn-primary add-to-cart mx-2"><i class="bi bi-cart-plus"></i> Agregar al carrito</button>
+      <!-- Botón que activa el modal -->
+      <button type="button" class="btn btn-outline-secondary view-now hover-hover" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye"></i> Ver ahora</button>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Modal producto -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <!-- Imagen del producto en el modal -->
+        <img src="https://i.postimg.cc/KcLZMnRm/Pernil-de-Cerdo.jpg" class="img-fluid w-100" alt="...">
+        <!-- Información del producto en el modal -->
+        <div class="p-4 bg-light">
+          <h4 class="modal-title" id="exampleModalLabel">Pernil de Cerdo</h4>
+          <p class="product-price fw-bold text-danger">$2.50us por libra</p>
+          <p class="">Los murlos vienen con un promedio de 20 Libras</p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------------------------>
+</section>
+
+  <!----------------------------------------------MODALES------------------------------------------>
+
+  
+<!-- Botón para abrir el primer modal -->
+
+<!-- Primer modal: lista del carrito -->
+<div class="modal fade top-right" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Lista del carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="cart-list"></ul>
+          <p class="cart-total">Total: $0.00</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="clearCart">Limpiar carrito</button>
+          <button type="button" class="btn btn-primary" id="checkoutCart" data-bs-toggle="modal" data-bs-target="#checkoutModal">Finalizar compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Segundo modal: formulario de compra -->
+<!-- Segundo modal: formulario de compra con estilo diferente -->
+<div class="modal fade top-right" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content new-style">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="checkoutModalLabel">Finalizar compra con nuevo estilo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form">
+          <div class="modal-form-group">
+            <label for="name" class="modal-form-label">Nombre</label>
+            <input type="text" id="name" class="modal-form-input form-control" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="phone" class="modal-form-label">Teléfono</label>
+            <input type="tel" id="phone" class="modal-form-input form-control intl-tel-input" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="email" class="modal-form-label">Correo</label>
+            <input type="email" id="email" class="modal-form-input form-control" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="recipient" class="modal-form-label">Nombre de a quien envía</label>
+            <input type="text" id="recipient" class="modal-form-input form-control" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="recipient-phone" class="modal-form-label">Teléfono de a quien envía</label>
+            <input type="tel" id="recipient-phone" class="modal-form-input form-control intl-tel-input" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="street" class="modal-form-label">Nombre de la calle</label>
+            <input type="text" id="street" class="modal-form-input form-control" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="between" class="modal-form-label">Entre calles</label>
+            <input type="text" id="between" class="modal-form-input form-control" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="number" class="modal-form-label">Número de la casa</label>
+            <input type="number" id="number" class="modal-form-input form-control" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-target="#cartModal" data-bs-toggle="modal">Volver al Carrito</button>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal de contacto -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nameInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="emailInput" required>
+          </div>
+          <div class="mb-3">
+            <label for="messageInput" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="messageInput" rows="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal para el formulario de contacto -->
+
+<!-- Scripts para los componentes adicionales -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/intlTelInput.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/utils.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+ var timer = 4000;
+
+var i = 0;
+var max = $('#c > li').length;
+ 
+	$("#c > li").eq(i).addClass('active').css('left','0');
+	$("#c > li").eq(i + 1).addClass('active').css('left','25%');
+	$("#c > li").eq(i + 2).addClass('active').css('left','50%');
+	$("#c > li").eq(i + 3).addClass('active').css('left','75%');
+ 
+
+	setInterval(function(){ 
+
+		$("#c > li").removeClass('active');
+
+		$("#c > li").eq(i).css('transition-delay','0.25s');
+		$("#c > li").eq(i + 1).css('transition-delay','0.5s');
+		$("#c > li").eq(i + 2).css('transition-delay','0.75s');
+		$("#c > li").eq(i + 3).css('transition-delay','1s');
+
+		if (i < max-4) {
+			i = i+4; 
+		}
+
+		else { 
+			i = 0; 
+		}  
+
+		$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+		$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+		$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+		$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+	
+	}, timer);
+ 
+
+
+
+
+// Verificar si el contador de visitas ya existe en el almacenamiento local
+if(localStorage.getItem('visitCount')) {
+      let count = parseInt(localStorage.getItem('visitCount'));
+      count++;
+      localStorage.setItem('visitCount', count);
+      if (count > 1) {
+        document.getElementById('visit-count').textContent = `¡Bienvenido de nuevo! Nos has visitado ${count} veces. Nos alegra poder ayudarte.`;
+      } else {
+        document.getElementById('visit-count').textContent = `¡Bienvenido! Esta es tu segunda visita.`;
+      }
+    } else {
+      localStorage.setItem('visitCount', 1);
+    }
+
+
+
+ $(document).ready(function() {
+    $('#contactoLink').click(function(e) {
+      e.preventDefault();
+      $('#cartModal').modal('show');
+    });
+  });
+ document.addEventListener('DOMContentLoaded', function () {
+    var inputPhone = document.querySelector('#phone');
+    var inputRecipientPhone = document.querySelector('#recipient-phone');
+
+    // Inicialización de los campos de teléfono con la opción separateDialCode
+    var itiPhone = window.intlTelInput(inputPhone, {
+      initialCountry: 'us',
+      separateDialCode: false,
+    });
+
+    var itiRecipientPhone = window.intlTelInput(inputRecipientPhone, {
+      initialCountry: 'cu',
+      separateDialCode: false,
+    });
+  });
+   // Variables globales para almacenar los productos en el carrito
+const cartItems = [];
+let total = 0;
+
+// Encuentra el botón "Enviar" en el segundo modal (formulario de compra)
+const sendButton = document.querySelector('#checkoutModal button[type="submit"]');
+
+// Verifica si ya hay un event listener en el botón "Enviar"
+const existingClickListener = sendButton.onclick;
+
+// Agrega un evento de clic al botón "Enviar" solo si no hay un listener existente
+if (!existingClickListener) {
+  sendButton.addEventListener('click', function (event) {
+    // Evita que el formulario se envíe por defecto (ya que estás manejando esto con JavaScript)
+    event.preventDefault();
+
+    // Llama a la función para enviar la información a WhatsApp
+    sendToWhatsApp();
+  });}
+
+// Función para agregar un producto al carrito
+function addToCart(productName, productImage) {
+  // Buscar el elemento del producto por su nombre
+  const productCards = document.querySelectorAll('.card');
+  let productPrice = 0;
+
+  productCards.forEach(card => {
+    if (card.querySelector('.card-title').textContent === productName) {
+      productPrice = parseFloat(card.querySelector('.product-price').textContent.replace(/[^0-9.]/g, ''));
+    }
+  });
+
+  // Verificar si el producto ya está en el carrito
+  const existingItem = cartItems.find(item => item.name === productName);
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cartItems.push({
+      name: productName,
+      price: productPrice,
+      image: productImage,
+      quantity: 1
+    });
+  }
+
+  // Actualizar la lista del carrito
+  updateCartList();
+}
+
+// Función para eliminar un producto del carrito
+function removeFromCart(productName) {
+  const index = cartItems.findIndex(item => item.name === productName);
+  if (index !== -1) {
+    cartItems.splice(index, 1);
+    updateCartList();
+  }
+}
+
+// Función para actualizar la lista del carrito en el modal
+function updateCartList() {
+  const cartList = document.querySelector('.cart-list');
+  cartList.innerHTML = '';
+
+  total = 0;
+
+  cartItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('cart-item');
+    listItem.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+      <span class="cart-item-quantity">${item.quantity}</span>
+      <span class="cart-item-name">${item.name}</span>
+      <span class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+      <button class="cart-item-remove" onclick="removeFromCart('${item.name}')">Eliminar</button>
+    `;
+    cartList.appendChild(listItem);
+
+    total += item.price * item.quantity;
+  });
+
+  const cartTotal = document.querySelector('.cart-total');
+  cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Espera a que el documento HTML se cargue completamente
+document.addEventListener("DOMContentLoaded", function () {
+  // Encuentra el icono del carrito en la barra de navegación
+  const cartIcon = document.querySelector('.bi-cart-fill');
+
+  // Encuentra el primer modal (el del carrito)
+  const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+
+  // Encuentra el segundo modal (formulario de compra)
+  const checkoutModal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+
+  // Agrega un evento de clic al icono del carrito
+  cartIcon.addEventListener('click', function () {
+    // Abre el primer modal (carrito) al hacer clic en el icono del carrito
+    cartModal.show();
+  });
+
+  // Encuentra el botón "Finalizar compra" en el primer modal (carrito)
+  const checkoutButton = document.getElementById('checkoutCart');
+
+  // Agrega un evento de clic al botón "Finalizar compra"
+  checkoutButton.addEventListener('click', function () {
+    // Cierra el primer modal (carrito)
+    cartModal.hide();
+
+    // Abre el segundo modal (formulario de compra) al hacer clic en "Finalizar compra"
+    checkoutModal.show();
+  });
+
+  // Obtener los botones "Agregar al carrito"
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  // Asignar evento clic a cada botón "Agregar al carrito"
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const productCard = this.closest('.card');
+      const productName = productCard.querySelector('.card-title').textContent;
+      const productImage = productCard.querySelector('.card-img-top').src;
+
+      addToCart(productName, productImage);
+    });
+  });
+});
+// Función para limpiar el carrito
+function clearCart() {
+  cartItems.length = 0; // Vacía el arreglo cartItems
+  updateCartList(); // Actualiza la lista del carrito
+}
+
+// Espera a que el documento HTML se cargue completamente
+document.addEventListener("DOMContentLoaded", function () {
+  // ... (otros códigos)
+
+  // Encuentra el botón "Limpiar carrito" en el primer modal (carrito)
+  const clearCartButton = document.getElementById('clearCart');
+
+  // Agrega un evento de clic al botón "Limpiar carrito"
+  clearCartButton.addEventListener('click', function () {
+    clearCart(); // Llama a la función para limpiar el carrito
+  });
+
+  });
+
+
+
+
+// Función para actualizar la lista del carrito en el modal y el número en la barra de navegación
+function updateCartList() {
+  const cartList = document.querySelector('.cart-list');
+  cartList.innerHTML = '';
+
+  total = 0;
+
+  cartItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('cart-item');
+    listItem.innerHTML = `
+      <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+      <span class="cart-item-quantity">${item.quantity}</span>
+      <span class="cart-item-name">${item.name}</span>
+      <span class="cart-item-price">$${(item.price * item.quantity).toFixed(2)}</span>
+      <button class="cart-item-remove" onclick="removeFromCart('${item.name}')">Eliminar</button>
+    `;
+    cartList.appendChild(listItem);
+
+    total += item.price * item.quantity;
+  });
+
+  // sincronizar con local storage
+  
+
+  const cartTotal = document.querySelector('.cart-total');
+  cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+
+  // Actualizar el número en la barra de navegación
+  const cartBadge = document.querySelector('.navbar .badge');
+  let totalQuantity = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  cartBadge.textContent = totalQuantity.toString();
+}
+
+// Captura la barra de navegación
+const navbar = document.querySelector('.navbar');
+
+// Escucha el evento de scroll
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 50) { // Ajusta este valor según sea necesario
+    navbar.classList.add('transparent-navbar');
+  } else {
+    navbar.classList.remove('transparent-navbar');
+  }
+});
+// Inicializar intlTelInput para el primer campo de teléfono
+const phoneInput1 = document.querySelector('#phone1');
+const iti1 = window.intlTelInput(phoneInput1, {
+  initialCountry: 'us',
+  utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/utils.js'
+});
+
+const phoneInput2 = document.querySelector('#phone2');
+const iti2 = window.intlTelInput(phoneInput2, {
+  initialCountry: 'cu',
+  utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.10/js/utils.js'
+});
+
+// Agregar la bandera al div correspondiente
+document.querySelector('#flag1').appendChild(iti1.getSelectedCountryData().flagElement.cloneNode(true));
+document.querySelector('#flag2').appendChild(iti2.getSelectedCountryData().flagElement.cloneNode(true));
+
+
+
+// Espera a que el documento HTML se cargue completamente
+document.addEventListener("DOMContentLoaded", function () {
+  const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+  const checkoutModal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+
+  const backButton = document.getElementById('backToCart');
+
+  backButton.addEventListener('click', function() {
+    checkoutModal.hide();
+    cartModal.show();
+
+    // Limpia el fondo oscuro que podría quedar
+    const modalBackdrops = document.querySelectorAll('.modal-backdrop');
+    modalBackdrops.forEach(backdrop => {
+      backdrop.parentNode.removeChild(backdrop);
+    });
+
+    // Remueve la clase 'modal-open' del body
+    document.body.classList.remove('modal-open');
+  });
+});
+
+function sendToWhatsApp() {
+  // Obtener los valores de los campos del primer modal (lista del carrito)
+  const cartItems = document.querySelectorAll('.cart-item');
+  let cartProducts = '';
+  cartItems.forEach(item => {
+    const quantity = item.querySelector('.cart-item-quantity').textContent;
+    const name = item.querySelector('.cart-item-name').textContent;
+    cartProducts += `${quantity} ${name}\n`;
+  });
+  const cartTotal = document.querySelector('.cart-total').textContent;
+
+  // Obtener los valores de los campos del segundo modal (formulario de compra)
+  const name = document.querySelector('#name').value.trim();
+  const phone = document.querySelector('#phone').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const recipient = document.querySelector('#recipient').value.trim();
+  const recipientPhone = document.querySelector('#recipient-phone').value.trim();
+  const street = document.querySelector('#street').value.trim();
+  const between = document.querySelector('#between').value.trim();
+  const number = document.querySelector('#number').value.trim();
+
+  // Construir el mensaje para enviar por WhatsApp
+  let message = `Hola desde la Tienda Online Rincon de Cuba,\n`;
+  message += `Mi nombre es ${name} y he realizado un pedido de:\n`;
+  message += `${cartProducts}`;
+  message += `Con un total del: ${cartTotal}.\n`;
+  message += `Deseo enviarlo a ${recipient}.\n`;
+  message += `Su número de Teléfono es: ${recipientPhone}.\n`;
+  message += `Y su dirección es: Calle ${street}, entre ${between}, #${number}.\n`;
+  message += `Espero su respuesta... saludos.\n`;
+
+  // Crear el enlace de WhatsApp con el mensaje generado
+  const whatsappLink = `https://api.whatsapp.com/send?phone=5355189657&text=${encodeURIComponent(message)}`;
+  
+  // Abrir el enlace en una nueva pestaña
+  window.open(whatsappLink, '_blank');
+}
+
+
+
+
+
+  </script>
+  
+  
+  
+</body>
+</html>
+

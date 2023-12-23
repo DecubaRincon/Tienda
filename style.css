@@ -1,0 +1,280 @@
+/* Estilos personalizados para el carrito */
+.cart-icon-badge {
+    position: relative;
+  }
+  
+  .cart-icon-badge .bi-cart-fill {
+    background-color: #0734ff; /* Color de fondo del icono del carrito (gris oscuro) */
+    color: white; /* Color del icono */
+    padding: 0.5rem; /* Ajuste de espaciado */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  .cart-icon-badge .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 0.75rem;
+    min-width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+  
+  
+  
+  /* Fondo oscuro para el navbar */
+  .navbar {
+      background-color: #222;
+    }
+    /* Color blanco para los links del navbar */
+    .nav-link, .navbar-brand {
+      color: white;
+    }
+    /* Efecto de hover para los links del navbar */
+    .nav-link:hover, .navbar-brand:hover {
+      color: #b6cefa;
+    }
+    
+    /* Color rojo para el badge del carrito */
+    .badge {
+      background-color: rgb(0, 68, 255);
+    }
+   
+  
+  
+    /* Estilo para la sesión de productos */
+    /* Define algunas variables de color */
+  :root {
+    --color-primary: #f0f0f0;
+    --color-secondary: #2a2a2a;
+    --color-accent: #2196f3;
+    --color-start: #f1dc1e;
+  }
+  
+  /* Importa una fuente personalizada de Google Fonts */
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+  
+  
+  
+  /* Aplica un estilo a la fuente */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-secondary);
+  }
+  
+  
+  
+  /* Estilos adicionales para la sección responsiva */
+  @media (max-width: 768px) {
+    .product-section {
+      padding: 30px 0;
+    }
+    .product-card {
+      margin-bottom: 30px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+    /* Estilos para los productos en el carrito dentro del primer modal */
+  .cart-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    
+    .cart-item-image {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    
+    .cart-item-quantity {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .cart-item-name {
+      flex: 1;
+      margin-right: 5px;
+    }
+    
+    .cart-item-price {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    .cart-item-remove {
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      padding: 3px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    
+    .cart-item-remove:hover {
+      background-color: #c82333;
+    }
+    .product-price {
+      font-size: 18px; /* Tamaño de fuente personalizado */
+      color: #007bff; /* Color de texto personalizado */
+      /* Otros estilos que desees aplicar al precio del producto */
+    }
+  
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ajusta este valor según sea necesario para asegurarte de que la barra esté sobre otros elementos si es necesario */
+    }
+    
+    .transparent-navbar {
+      background-color: rgba(255, 255, 255, 0); /* Color de fondo transparente */
+      transition: background-color 0.4s ease; /* Transición suave */
+    
+     
+    }
+    
+    .transparent-navbar:hover {
+      background-color:  rgba(0, 0, 0, 0.2); /* Cambio de opacidad al hacer hover */
+    }
+   /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+      /* Cambia la opacidad de la barra de navegación en pantallas pequeñas */
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.5); /* Opacidad más baja */
+      }
+    
+      /* Efecto de hover en pantallas pequeñas */
+      .navbar:hover {
+        background-color: rgba(0, 0, 0, 0.7); /* Cambia el color de fondo al hacer hover */
+      
+      }
+    }
+  
+  /*----------------------------------------------------------------------------*/
+  
+  /* Estilos para el formulario de compra */
+  
+  /* Ajuste de estilos para las banderas */
+  .input-group-prepend .input-group-text {
+    border-radius: 0;
+  }
+  
+  .iti {
+    width: 100%;
+  }
+  
+  .iti__flag {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  @media (min-width: 576px) {
+      .modal.top-right {
+          margin-right: calc(100% - (100vw - 3rem)); /* Ajusta el margen derecho para mantener el ancho */
+      }
+  }
+  /* Estilo general de la tarjeta */
+  .card {
+    /* Agrega una sombra suave a la tarjeta */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* Agrega una transición al girar la tarjeta */
+    transition: transform 0.6s;
+    /* Usa el eje Y para girar la tarjeta */
+    transform-style: preserve-3d;
+  }
+  
+  /* Estilo del contenedor interno de la tarjeta */
+  .card-inner {
+    /* Permite que el contenedor gire */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* Gira la tarjeta al pasar el cursor */
+    transform: rotateY(0deg);
+  }
+  
+  /* Estilo de la parte frontal de la tarjeta */
+  .card-front {
+    /* Posiciona la parte frontal sobre la trasera */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Estilo de la parte trasera de la tarjeta */
+  .card-back {
+    /* Posiciona la parte trasera debajo de la frontal */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Gira la parte trasera 180 grados */
+    transform: rotateY(180deg);
+  }
+  
+  /* Estilo de la imagen de la tarjeta */
+  .card-img-top {
+    /* Ajusta el tamaño de la imagen al ancho de la tarjeta */
+    width: 100%;
+    /* Agrega un borde redondeado a la imagen */
+    border-radius: 0.25rem;
+  }
+  
+  /* Estilo del título de la tarjeta */
+  .card-title {
+    /* Usa una fuente sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Usa un color oscuro para el título */
+    color: #333;
+    /* Agrega un margen inferior al título */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo del precio de la tarjeta */
+  .product-price {
+    /* Usa una fuente sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Usa un tamaño de fuente más grande para el precio */
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo del texto de la tarjeta */
+  .card-text {
+    /* Usa una fuente sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Usa un color gris para el texto */
+    color: #777;
+    /* Agrega un margen inferior al texto */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo de las estrellas de la tarjeta */
+  .star {
+    /* Usa un color dorado para las estrellas */
+    color: gold;
+  }
+  
+  
+  
+  
+  
+  
